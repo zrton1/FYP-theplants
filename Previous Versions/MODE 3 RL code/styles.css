@@ -1,0 +1,175 @@
+/*Overall main container which keeps the first and second rows in place*/
+.OverallContainer {
+    /* Height and width fallback for older browsers. */
+    height: auto;
+    width: auto ;
+
+    /* Set the height to match that of the viewport. */
+    height: auto;
+
+    /* Set the width to match that of the viewport. */
+    width: auto;
+
+    /* Remove any browser-default margins. */
+    margin: auto;
+
+    background-color: #2ba9cc; /*background colour*/
+
+}
+/*This is the top container (row 1)*/
+.FlexContainer1 {
+	min-height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: .5%;
+	padding-top: 1%;
+  flex-direction: row;
+	justify-content:space-around;
+}
+
+/*This is the bottom container (row 2)*/
+.FlexContainer2 {
+	min-height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	padding-top:.5%;
+  flex-direction: row;
+	justify-content:space-around;
+}
+
+/*FlexContainer3 and flexEnd are both for the Finished! button*/
+.FlexContainer3{
+  min-height: 5vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.flexEnd{
+  display: flex;
+  background: #4287f5;
+  border: 1px;
+  align-items: center;
+  color: white;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.flex:before {
+  content: '';
+  display: table;
+  padding-top: 70%;
+}
+
+/*this is for the individual boxes in my two rows of containers*/
+.FlexContainer1 > button {
+	flex: 1 0 33%;
+  border: 1px;
+  /*Need to change from px to % or something...*/
+  max-height: 100px;
+  max-width: 100px;
+	color: white;
+  background-color: #2ba9cc; /*individual button background colour*/
+	box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  outline: none;
+}
+
+/*this is for the individual boxes in my two rows of containers*/
+.FlexContainer2 > button {
+	flex: 1 0 33%;
+  border: 1px;
+/*Need to change from px to % or something...*/
+max-height: 100px;
+max-width: 100px;
+
+	color: white;
+  background-color: #2ba9cc; /*individual button background colour*/
+	box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.flex1 {
+  background-image: url(1a.png);
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.flex2 {
+  background-image: url(2a.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.flex3 {
+  background-image: url(3a.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.flex4 {
+  background-image: url(4a.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.flex5 {
+  background-image: url(5a.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.flex6 {
+  background-image: url(6a.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*this is the change in colour for when the button is pressed*/
+.flex1.active{
+  background-image: url(1b.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.flex2.active{
+  background-image: url(2b.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.flex3.active{
+  background-image: url(3b.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.flex4.active{
+  background-image: url(4b.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.flex5.active{
+  background-image: url(5b.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.flex6.active{
+  background-image: url(6b.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

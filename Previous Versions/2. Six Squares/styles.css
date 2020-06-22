@@ -1,0 +1,66 @@
+/*this styling is for the main container*/
+.OverallContainer {
+    /* Height and width fallback for older browsers. */
+    height: 100%;
+    width: 100%;
+
+    /* Set the height to match that of the viewport. */
+    height: 100vh;
+
+    /* Set the width to match that of the viewport. */
+    width: 100vw;
+
+    /* Remove any browser-default margins. */
+    margin: 0;
+}
+/*
+.OverallContainer{
+	max-width: 100vw;
+	max-height: 100vh;
+	margin: 0;
+}*/
+
+.FlexContainer1 {
+	min-height: 25vh;
+
+  display: flex;
+  flex-wrap: wrap;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: .5%;
+	padding-top: 1%;
+	justify-content:space-around;
+}
+
+.FlexContainer2 {
+	min-height: 25vh;
+  display: flex;
+  flex-wrap: wrap;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	padding-top:.5%;
+	justify-content:space-around;
+}
+
+
+.flex:before {
+  content: '';
+  display: table;
+  padding-top: 70%;
+}
+
+
+.flex {
+	flex: 1 0 33%;
+  border: 1px solid black;
+  background: blue;
+	max-height: 100px;
+	max-width: 100px;
+
+	color: white;
+	box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

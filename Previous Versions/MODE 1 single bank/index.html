@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang "en">
+<head>
+	<meta charset="utf-8">
+	<!-- viewport stops double-tap zoom in -->
+	<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<meta name="google-site-verification" content="vfsf318zwr-N5-xA5iefUCn3S8ji0NjrmPdXIRHHjXU" />
+	<!--The css and js scripts only work because in the server.js script we write paths to them-->
+	<link rel="stylesheet" type="text/css"   href="styles.css">
+	<script src = "script.js" defer></script>
+
+	<title>The Plants</title>
+	<link rel="shortcut icon" href="plant.png" />
+</head>
+
+<body>
+	<div class = OverallContainer>
+		<div class="FlexContainer1">
+		  <button data-note = "21" class="flex1"></button>
+		  <button data-note = "22" class="flex2"></button>
+		  <button data-note = "23" class="flex3"></button>
+		</div>
+
+		<div class="FlexContainer2">
+		  <button data-note = "24" class="flex4"></button>
+		  <button data-note = "25" class="flex5"></button>
+			<button data-note = "26" class="flex6"></button>
+		</div>
+
+	<!--Finish button to click when user finishes interacting-->
+		<div class="FlexContainer3">
+			<button id = "end" class="flexEnd">Finished!</button>
+		</div>
+	</div>
+
+		<!--only audio bank being used in Mode 1-->
+		<audio id="21" src="2harp/001.mp3"></audio>
+		<audio id="22" src="2harp/002.mp3"></audio>
+		<audio id="23" src="2harp/003.mp3"></audio>
+		<audio id="24" src="2harp/004.mp3"></audio>
+		<audio id="25" src="2harp/005.mp3"></audio>
+		<audio id="26" src="2harp/006.mp3"></audio>
+
+
+</body>
+</html>
